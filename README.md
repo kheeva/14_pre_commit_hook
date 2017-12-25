@@ -5,12 +5,16 @@ Hooks your commits, runs tests before commit. Interrupt commit if tests fail.
 # How to Install
 
 Copy file `pre-commit` to `.git/hooks` directory.
-```
 
 # How to use
+Run git commit:
 ```bash
 git add quadratic_equation.py
 git commit -m "tests"
+```
+
+Result:
+```
 Running tests...
 .E..
 ======================================================================
@@ -27,7 +31,6 @@ ValueError: math domain error
 Ran 4 tests in 0.001s
 
 FAILED (errors=1)
-
 ```
 
 # Project Goals
